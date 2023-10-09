@@ -1,0 +1,38 @@
+{
+  "name": "pubsub-ts",
+  "version": "1.0.0",
+  "description": "PubSub is a topic-based publish/subscribe utility written in Typescript",
+  "keywords": [],
+  "author": "Synergi",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/pubsub-ts.umd.cjs",
+  "module": "dist/pubsub-ts.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/pubsub-ts.js",
+      "import": "./dist/pubsub-ts.umd.cjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/events": "^3.0.0",
+    "@types/node": "^18.16.3",
+    "jsdom": "^22.1.0",
+    "prettier": "^2.8.8",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.4",
+    "vite-plugin-dts": "^2.3.0",
+    "vitest": "^0.31.0"
+  }
+}
